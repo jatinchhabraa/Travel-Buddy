@@ -1,11 +1,13 @@
 /* style.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
-
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
 header {
   background: #4caf50;
   color: #fff;
@@ -36,28 +38,71 @@ header ul li a {
 }
 
 #hero {
-background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600') no-repeat center center;
-
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600') no-repeat center center;
+  background-size: cover;
   color: #fff;
   text-align: center;
   padding: 3rem 2rem;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero h2 {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 #hero button {
-  background: #4caf50;
+  background: #ff5722;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
   border: none;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-#features, #how-it-works {
+#hero button:hover {
+  background: #e64a19;
+}
+
+
+#features {
   padding: 2rem;
   text-align: center;
+}
+
+#features .feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#features .feature-item {
+  text-align: center;
+  max-width: 150px;
+}
+
+#features .feature-item i {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+#features .feature-item p {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 footer {
@@ -66,3 +111,36 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+footer .social-icons {
+  margin-top: 0.5rem;
+}
+
+footer .social-icons a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #4caf50;
+}
+
+/* For devices smaller than 768px */
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #features .feature-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+

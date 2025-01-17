@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Buddy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -29,11 +38,20 @@
 
     <section id="features">
       <h3>Features</h3>
-      <ul>
-        <li>Interactive Maps</li>
-        <li>Collaborative Itineraries</li>
-        <li>Budget Estimation</li>
-      </ul>
+      <div class="feature-list">
+        <div class="feature-item">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Interactive Maps</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-users"></i>
+          <p>Collaborative Itineraries</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-wallet"></i>
+          <p>Budget Estimation</p>
+        </div>
+      </div>
     </section>
 
     <section id="how-it-works">
@@ -47,6 +65,11 @@
 
     <footer>
       <p>© 2025 Travel Planner. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
