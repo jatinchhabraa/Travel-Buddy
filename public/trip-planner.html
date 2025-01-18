@@ -14,6 +14,19 @@
       </nav>
     </header>
 
+    <section id="destination-search">
+      <h3>Find Your Destination</h3>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-box"
+          placeholder="Enter a destination..."
+        />
+        <button id="search-button">Search</button>
+      </div>
+      <div id="map"></div>
+    </section>
+
     <main>
       <h2>Plan Your Trip</h2>
       <p>Interactive map and itinerary management coming soon!</p>
@@ -22,5 +35,11 @@
     <footer>
       <p>© 2025 Travel Planner. All Rights Reserved.</p>
     </footer>
+    <script
+      async
+      defer
+      src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyh0TW5LQXPSWECMiHY_GtDtHbGtnPVU63Q&libraries=geometry,places&callback=initMap"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

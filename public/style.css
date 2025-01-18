@@ -153,6 +153,55 @@ header ul li a {
   line-height: 1.5;
 }
 
+#destination-search {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+#destination-search h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#search-box {
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#search-button:hover {
+  background: #45a049;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
 
 footer {
   background: #333;
@@ -186,6 +235,16 @@ footer .social-icons a:hover {
   #hero p {
     font-size: 1rem;
   }
+
+  @media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    margin-bottom: 1rem;
+  }
+}
 
   #features .feature-list {
     flex-direction: column;
